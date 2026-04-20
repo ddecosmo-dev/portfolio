@@ -97,7 +97,7 @@ If migrating from your old portfolio at `https://ddecosmo-dev.github.io/Portfoli
    git push origin main
    ```
 
-2. **Your portfolio stays at same URL**: `https://ddecosmo-dev.github.io/Portfolio/`
+2. **Your portfolio will still deploy to**: `https://ddecosmo-dev.github.io/portfolio/`
 
 ### Option 3: Use Organization/User Pages
 

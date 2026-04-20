@@ -84,7 +84,7 @@ Then visit: `http://localhost:8000`
 
 #### **IMPORTANT: How to Move from Old Portfolio**
 
-Your current portfolio is at: `https://ddecosmo-dev.github.io/Portfolio/`
+Your current portfolio is at: `https://ddecosmo-dev.github.io/portfolio/`
 
 **Recommended**: Keep the same URL by updating the existing repo
 
@@ -103,7 +103,7 @@ git commit -m "New portfolio design - responsive, project showcase, full resume"
 git push origin main
 ```
 
-**Your portfolio automatically updates at**: `https://ddecosmo-dev.github.io/Portfolio/`
+**Your portfolio automatically updates at**: `https://ddecosmo-dev.github.io/portfolio/`
 
 ---
 
@@ -297,9 +297,9 @@ Portfolio automatically adjusts for:
 
 ## 🔗 Important Links
 
-**Your Portfolio**: `https://ddecosmo-dev.github.io/Portfolio/` (after deployment)
+**Your Portfolio**: `https://ddecosmo-dev.github.io/portfolio/` (after deployment)
 
-**Repository**: `https://github.com/ddecosmo-dev/Portfolio`
+**Repository**: `https://github.com/ddecosmo-dev/portfolio`
 
 **Social Profiles** (update in header):
 - GitHub: https://github.com/ddecosmo-dev
