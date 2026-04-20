@@ -63,7 +63,7 @@ portfolio/
 
 2. **Push the portfolio folder to GitHub**:
    ```bash
-   cd d-portfolio/portfolio
+   cd d-portfolio
    git init
    git add .
    git commit -m "Initial portfolio commit"
@@ -90,7 +90,7 @@ If migrating from your old portfolio at `https://ddecosmo-dev.github.io/Portfoli
    
    # Replace old content with new portfolio
    rm -rf * .gitignore
-   cp -r ../d-portfolio/portfolio/* .
+   cp -r ../d-portfolio/* .
    
    git add .
    git commit -m "Redesign portfolio with new structure"

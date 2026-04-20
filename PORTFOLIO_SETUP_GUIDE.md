@@ -59,7 +59,7 @@ d-portfolio/
 Navigate to the portfolio folder and run a local server:
 
 ```bash
-cd ~/work/d-portfolio/portfolio
+cd ~/work/d-portfolio
 
 # Option A: Python
 python -m http.server 8000
@@ -95,7 +95,7 @@ cd Portfolio
 
 # Clear old content and add new portfolio
 rm -rf * .gitignore
-cp -r ~/work/d-portfolio/portfolio/* .
+cp -r ~/work/d-portfolio/* .
 
 # Commit and push
 git add .
