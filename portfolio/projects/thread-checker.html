@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thread Checker - Devin DeCosmo</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">D.D</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="mailto:devindecosmo@gmail.com" title="Email">Email</a>
+        <a href="https://github.com/ddecosmo-dev" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/devin-decosmo" target="_blank" title="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+      <div class="project-header">
+        <div class="project-image">🧵</div>
+        <div class="project-info">
+          <h1>Thread Checker</h1>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Timeline:</strong> August 2025 - Present</div>
+            <div class="project-meta-item"><strong>Type:</strong> Personal ML Project</div>
+            <div class="project-meta-item"><strong>Accuracy:</strong> 76% Testing</div>
+          </div>
+          <p class="project-description">
+            A computer vision application that automatically classifies different thread types on fasteners. This project demonstrates expertise in dataset creation, data augmentation, transfer learning, and model deployment to production environments.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="https://huggingface.co/spaces" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/ddecosmo-dev" target="_blank" class="btn btn-secondary" style="margin-left: 1rem;">View Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-highlights">
+        <h3>Project Highlights</h3>
+        <ul>
+          <li>Created comprehensive dataset of 400 real images, augmented to 4,000 training samples</li>
+          <li>Implemented sophisticated data preprocessing for standardized scaling, aspect ratio, and contrast</li>
+          <li>Improved classification accuracy by 15% through strategic data augmentation</li>
+          <li>Deployed MobileNetV2 model to Hugging Face Space for public access</li>
+        </ul>
+      </div>
+
+      <h2 style="margin-top: 2rem;">Project Overview</h2>
+      <p class="project-description">
+        Thread Checker addresses the practical problem of fastener identification in manufacturing, quality control, and reverse engineering scenarios. The application uses deep learning to distinguish between three common thread types, helping engineers and technicians quickly and accurately identify fastener specifications from images alone.
+      </p>
+
+      <h3 style="color: var(--primary-color); margin-top: 1.5rem;">Key Achievements</h3>
+      
+      <div class="project-description">
+        <strong>Dataset Creation & Augmentation</strong><br>
+        Developed a robust dataset pipeline starting with 400 high-quality real images captured under various lighting and angle conditions. Applied strategic data augmentation including rotation, scaling, brightness adjustment, and contrast normalization to expand the training set to 4,000 images without sacrificing data quality.
+      </div>
+
+      <div class="project-description">
+        <strong>Data Preprocessing Pipeline</strong><br>
+        Implemented comprehensive preprocessing to standardize image scaling, maintain consistent aspect ratios, and normalize contrast across the dataset. This systematic approach improved baseline model performance by 15% and ensured consistent model behavior across diverse real-world inputs.
+      </div>
+
+      <div class="project-description">
+        <strong>Model Architecture</strong><br>
+        Selected MobileNetV2 as the base architecture for its balance of accuracy and computational efficiency. Added custom pooling layers to better capture thread-specific features. The resulting model achieves 76% accuracy across all three thread types while maintaining fast inference speeds suitable for mobile and embedded deployment.
+      </div>
+
+      <div class="project-description">
+        <strong>Production Deployment</strong><br>
+        Deployed the trained model to Hugging Face Spaces, creating a web interface that allows users to upload images and receive real-time classifications. The deployment demonstrates understanding of model serving, containerization, and user experience design.
+      </div>
+
+      <div class="project-tech">
+        <h3>Tech Stack</h3>
+        <div class="tech-stack">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">Keras</span>
+          <span class="tech-badge">MobileNetV2</span>
+          <span class="tech-badge">Computer Vision</span>
+          <span class="tech-badge">Image Processing</span>
+          <span class="tech-badge">Hugging Face</span>
+          <span class="tech-badge">Transfer Learning</span>
+        </div>
+      </div>
+
+      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Metrics</h3>
+      <div class="project-description">
+        <ul style="padding-left: 1.5rem;">
+          <li><strong>Dataset Size:</strong> 4,000 augmented images (400 original)</li>
+          <li><strong>Model Accuracy:</strong> 76% on test set across three thread types</li>
+          <li><strong>Data Augmentation Impact:</strong> 15% improvement over non-augmented baseline</li>
+          <li><strong>Model Efficiency:</strong> Fast inference suitable for real-time processing</li>
+          <li><strong>Deployment Platform:</strong> Live on Hugging Face Spaces for public use</li>
+        </ul>
+      </div>
+
+      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+        <h3 style="color: var(--primary-color); margin-top: 0;">Technical Insights</h3>
+        <p class="project-description" style="margin-bottom: 0;">
+          This project showcases the importance of high-quality data preparation in machine learning. The 15% accuracy improvement from data augmentation alone demonstrates that model architecture is only one piece of the puzzle. The choice of MobileNetV2 reflects real-world constraints: production systems often must balance accuracy with computational resources and inference latency.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
+        <a href="../projects.html" class="btn">← Back to All Projects</a>
+        <a href="../index.html" class="btn btn-secondary" style="margin-left: 1rem;">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Devin DeCosmo. All rights reserved.</p>
+    <p>
+      <a href="mailto:devindecosmo@gmail.com">Email</a> • 
+      <a href="https://github.com/ddecosmo-dev" target="_blank">GitHub</a> • 
+      <a href="https://linkedin.com/in/devin-decosmo" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

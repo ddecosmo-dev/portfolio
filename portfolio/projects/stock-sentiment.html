@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Sentiment Analysis - Devin DeCosmo</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">D.D</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="mailto:devindecosmo@gmail.com" title="Email">Email</a>
+        <a href="https://github.com/ddecosmo-dev" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/devin-decosmo" target="_blank" title="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+      <div class="project-header">
+        <div class="project-image">📈</div>
+        <div class="project-info">
+          <h1>Stock Sentiment Analysis Using 10-Q Forms</h1>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Timeline:</strong> October 2024 - December 2024</div>
+            <div class="project-meta-item"><strong>Type:</strong> Class Project</div>
+            <div class="project-meta-item"><strong>Peak Accuracy:</strong> 75%</div>
+          </div>
+          <p class="project-description">
+            A comprehensive machine learning system that predicts stock price movements following earnings announcements by analyzing sentiment in SEC 10-Q filings. This project combines natural language processing, financial data engineering, and deep learning to create an end-to-end prediction pipeline.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="https://github.com/ddecosmo-dev" target="_blank" class="btn">View on GitHub</a>
+            <a href="../projects.html" class="btn btn-secondary" style="margin-left: 1rem;">Back to Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-highlights">
+        <h3>Project Highlights</h3>
+        <ul>
+          <li>Developed dual-model architecture combining NLP (FinBERT) and traditional ML approaches</li>
+          <li>Built automated data pipeline processing unstructured SEC filings for 20 public companies</li>
+          <li>Achieved 75% classification accuracy on sentiment analysis and 70% on financial metrics</li>
+          <li>Analyzed which document sections contribute most to predictive accuracy</li>
+        </ul>
+      </div>
+
+      <h2 style="margin-top: 2rem;">Project Overview</h2>
+      <p class="project-description">
+        This project tackles the challenge of predicting stock price movements using textual and financial data from SEC 10-Q quarterly reports. By treating 10-Q filings as rich sources of company sentiment and financial health indicators, the system learns to identify predictive patterns that correlate with subsequent stock price performance.
+      </p>
+
+      <h3 style="color: var(--primary-color); margin-top: 1.5rem;">Key Achievements</h3>
+      
+      <div class="project-description">
+        <strong>Automated Data Pipeline</strong><br>
+        Developed an end-to-end pipeline that automatically downloads 10-Q filings from the SEC's Python API and web scraping, parses unstructured financial documents, and extracts both raw text and structured financial metrics. Successfully processed data for 20 publicly traded companies with full error handling and data validation.
+      </div>
+
+      <div class="project-description">
+        <strong>Dual-Model Architecture</strong><br>
+        Implemented a sophisticated two-pronged approach:
+        <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+          <li><strong>FinBERT Transformer:</strong> Fine-tuned on financial sentiment, analyzing textual content from 10-Q documents to capture nuanced sentiment and company-specific language patterns</li>
+          <li><strong>Neural Network on Financial Metrics:</strong> Shallow network trained on quantitative indicators (EPS, ROE, etc.) to capture traditional financial health signals</li>
+        </ul>
+      </div>
+
+      <div class="project-description">
+        <strong>Feature Engineering & Analysis</strong><br>
+        Conducted comprehensive feature analysis to determine which sections of 10-Q filings are most predictive. Results showed that combining all text features yields higher accuracy than any single section, providing valuable insights into how different parts of earnings reports correlate with stock performance.
+      </div>
+
+      <div class="project-description">
+        <strong>Model Performance</strong><br>
+        Achieved peak classification accuracy of 75% for predicting binary stock price movement (up/down) post-earnings, compared to 70% baseline accuracy using only financial metrics. The FinBERT component specifically demonstrated the value of sophisticated NLP in capturing market sentiment.
+      </div>
+
+      <div class="project-tech">
+        <h3>Tech Stack</h3>
+        <div class="tech-stack">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">FinBERT</span>
+          <span class="tech-badge">Transformers</span>
+          <span class="tech-badge">SEC API</span>
+          <span class="tech-badge">Web Scraping</span>
+          <span class="tech-badge">Pandas</span>
+          <span class="tech-badge">Matplotlib</span>
+          <span class="tech-badge">NLP</span>
+        </div>
+      </div>
+
+      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Analysis</h3>
+      <div class="project-description">
+        <ul style="padding-left: 1.5rem;">
+          <li><strong>Companies Analyzed:</strong> 20 publicly traded companies spanning multiple sectors</li>
+          <li><strong>Peak Sentiment Accuracy:</strong> 75% using combined FinBERT approach</li>
+          <li><strong>Financial Metrics Accuracy:</strong> 70% using traditional financial indicators</li>
+          <li><strong>Feature Analysis:</strong> All document sections combined > individual sections</li>
+          <li><strong>Data Volume:</strong> Thousands of 10-Q documents processed and analyzed</li>
+        </ul>
+      </div>
+
+      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+        <h3 style="color: var(--primary-color); margin-top: 0;">Key Insights</h3>
+        <p class="project-description" style="margin-bottom: 0;">
+          The 75% accuracy demonstrates that market-relevant sentiment is encoded in earnings reports and can be extracted through transformer models. The finding that all report sections combined yield better predictions than individual sections suggests that investors should consider holistic company narrative rather than isolated metrics. This work highlights the intersection of traditional finance and modern NLP techniques.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
+        <a href="../projects.html" class="btn">← Back to All Projects</a>
+        <a href="../index.html" class="btn btn-secondary" style="margin-left: 1rem;">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Devin DeCosmo. All rights reserved.</p>
+    <p>
+      <a href="mailto:devindecosmo@gmail.com">Email</a> • 
+      <a href="https://github.com/ddecosmo-dev" target="_blank">GitHub</a> • 
+      <a href="https://linkedin.com/in/devin-decosmo" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

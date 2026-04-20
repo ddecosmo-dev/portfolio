@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanternfly Tracker - Devin DeCosmo</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">D.D</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="mailto:devindecosmo@gmail.com" title="Email">Email</a>
+        <a href="https://github.com/ddecosmo-dev" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/devin-decosmo" target="_blank" title="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+      <div class="project-header">
+        <div class="project-image">🪲</div>
+        <div class="project-info">
+          <h1>Lanternfly Tracker</h1>
+          <div class="project-meta">
+            <div class="project-meta-item"><strong>Timeline:</strong> September 2025 - Present</div>
+            <div class="project-meta-item"><strong>Type:</strong> Hackathon Project</div>
+            <div class="project-meta-item"><strong>Status:</strong> 2nd Place (HackCMU 17 teams)</div>
+          </div>
+          <p class="project-description">
+            An innovative web application that leverages machine learning and crowdsourced data to track invasive lanternfly sightings. This project combines computer vision, data engineering, and web development to create a scalable solution for monitoring the range expansion of an invasive species.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="https://github.com/ddecosmo-dev" target="_blank" class="btn">View on GitHub</a>
+            <a href="../projects.html" class="btn btn-secondary" style="margin-left: 1rem;">Back to Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-highlights">
+        <h3>Project Highlights</h3>
+        <ul>
+          <li>Placed 2nd out of 17 teams at HackCMU, demonstrating scalable prototype for invasive species monitoring</li>
+          <li>Built end-to-end ML pipeline from data collection through model deployment</li>
+          <li>Achieved 89.7% accuracy on lightweight, production-ready model</li>
+          <li>Implemented real-time data visualization for researchers and the public</li>
+        </ul>
+      </div>
+
+      <h2 style="margin-top: 2rem;">Project Overview</h2>
+      <p class="project-description">
+        The Lanternfly Tracker addresses a critical ecological challenge: monitoring the invasive spotted lanternfly (Lycorma delicatula) population expansion across North America. By combining a web-based crowdsourcing platform with advanced machine learning, the project enables citizens and researchers to contribute real-time sighting data while an intelligent classifier validates and analyzes reports.
+      </p>
+
+      <h3 style="color: var(--primary-color); margin-top: 1.5rem;">Key Achievements</h3>
+      <div class="project-description">
+        <strong>Data Collection & Augmentation</strong><br>
+        Collected 300+ high-quality real images of lanternflies in various environments, supplemented with 2,000 additional insect and environmental images from Hugging Face. This comprehensive dataset of 5,000 images was carefully curated and augmented to improve model robustness.
+      </div>
+
+      <div class="project-description">
+        <strong>Model Development</strong><br>
+        Implemented transfer learning using EfficientNet-B0 with TensorFlow, achieving 89.7% classification accuracy. The lightweight model was specifically chosen for deployment at edge devices and mobile platforms, enabling real-time inference without heavy computational requirements.
+      </div>
+
+      <div class="project-description">
+        <strong>Real-Time Analytics</strong><br>
+        Developed kernel density mapping visualization using SciPy and Matplotlib to transform raw sighting data into actionable insights. The system processes CSV logs in real-time, generating live concentration maps that help researchers identify hotspots and predict population expansion patterns.
+      </div>
+
+      <div class="project-tech">
+        <h3>Tech Stack</h3>
+        <div class="tech-stack">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">EfficientNet-B0</span>
+          <span class="tech-badge">Transfer Learning</span>
+          <span class="tech-badge">SciPy</span>
+          <span class="tech-badge">Matplotlib</span>
+          <span class="tech-badge">NumPy</span>
+          <span class="tech-badge">Web Development</span>
+        </div>
+      </div>
+
+      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Impact</h3>
+      <div class="project-description">
+        <ul style="padding-left: 1.5rem;">
+          <li><strong>Model Accuracy:</strong> 89.7% classification accuracy on diverse environmental conditions</li>
+          <li><strong>Dataset:</strong> 5,000 augmented images covering various lanternfly life stages and environments</li>
+          <li><strong>Deployment:</strong> Production-ready model optimized for mobile and web platforms</li>
+          <li><strong>Scalability:</strong> Architecture designed to handle thousands of concurrent users submitting sightings</li>
+          <li><strong>Recognition:</strong> 2nd place award among 17 competing teams at HackCMU</li>
+        </ul>
+      </div>
+
+      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+        <h3 style="color: var(--primary-color); margin-top: 0;">Future Directions</h3>
+        <p class="project-description" style="margin-bottom: 0;">
+          Expand the model to incorporate additional features such as lanternfly egg mass detection, seasonal activity patterns, and predictive modeling of range expansion. Integration with citizen science platforms and government agencies could enable real-time population monitoring at scale.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
+        <a href="../projects.html" class="btn">← Back to All Projects</a>
+        <a href="../index.html" class="btn btn-secondary" style="margin-left: 1rem;">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Devin DeCosmo. All rights reserved.</p>
+    <p>
+      <a href="mailto:devindecosmo@gmail.com">Email</a> • 
+      <a href="https://github.com/ddecosmo-dev" target="_blank">GitHub</a> • 
+      <a href="https://linkedin.com/in/devin-decosmo" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Devin DeCosmo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .resume-container {
+      background-color: white;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--text-dark);
+    }
+
+    .resume-header {
+      text-align: center;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .resume-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .resume-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .resume-section h2 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .resume-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-weight: bold;
+      color: var(--primary-color);
+      font-size: 1rem;
+    }
+
+    .item-subtitle {
+      color: var(--text-light);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .item-date {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .item-location {
+      color: var(--secondary-color);
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .resume-list li {
+      padding: 0.4rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .resume-list li::before {
+      content: '▸';
+      color: var(--accent-color);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-group {
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent-color);
+    }
+
+    .skill-group strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-group p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .download-section {
+      text-align: center;
+      margin: 2rem 0 0 0;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: var(--primary-color);
+      transform: scale(1.05);
+    }
+
+    @media print {
+      body {
+        background-color: white;
+      }
+      .resume-container {
+        box-shadow: none;
+        max-width: 100%;
+      }
+      .download-section {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">D.D</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="mailto:devindecosmo@gmail.com" title="Email">Email</a>
+        <a href="https://github.com/ddecosmo-dev" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/devin-decosmo" target="_blank" title="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="resume-container">
+      <div class="resume-header">
+        <h1>Devin DeCosmo</h1>
+        <div class="contact-info">
+          <span>📞 570-217-1136</span>
+          <span>📧 devindecosmo@gmail.com</span>
+          <span>🔗 <a href="https://linkedin.com/in/devin-decosmo" target="_blank" style="color: var(--accent-color);">LinkedIn</a></span>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="resume-section">
+        <h2>Education</h2>
+        
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Carnegie Mellon University</span>
+            <span class="item-date">December 2026</span>
+          </div>
+          <div class="item-location">Master of Science in AI Engineering - Mechanical Engineering</div>
+          <p style="color: var(--text-light); margin: 0.5rem 0;">Relevant Coursework: Systems and Toolchains for Engineers, AI/ML for Engineers</p>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Arizona State University</span>
+            <span class="item-date">May 2025</span>
+          </div>
+          <div class="item-location">Bachelor of Science in Mechanical Engineering</div>
+          <p style="color: var(--text-light); margin: 0.5rem 0;"><strong>4.0/4.0 GPA • Summa Cum Laude • Barrett, The Honors College</strong></p>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="resume-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <strong>Programming Languages</strong>
+            <p>Python, C++, C#, MATLAB, SQL, Arduino, LabVIEW</p>
+          </div>
+          <div class="skill-group">
+            <strong>ML & Data Science</strong>
+            <p>TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Computer Vision</p>
+          </div>
+          <div class="skill-group">
+            <strong>Developer Tools</strong>
+            <p>Git, Linux, Windows, Docker, Apache Spark, Neo4J, GCS</p>
+          </div>
+          <div class="skill-group">
+            <strong>Engineering</strong>
+            <p>CAD, Control Systems, PID Control, Mechanical Design, Systems Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <div class="resume-section">
+        <h2>Professional Experience</h2>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Engineering Intern</span>
+            <span class="item-date">May 2025 - August 2025</span>
+          </div>
+          <div class="item-location">RedoxBlox • San Diego, CA</div>
+          <ul class="resume-list">
+            <li>Managed development of high-temperature control system for DOE project, executing mechanical design, control logic (Arduino), and GUI (C#) achieving ±1% control tolerance on aggressive schedule</li>
+            <li>Engineered and deployed PID control system (Arduino), using Git within Linux environment to manage development and deliver project 1 week early</li>
+            <li>Engineered C# application for real-time data monitoring and system control, enabling live data streaming, visualization, and logging via HTTP client</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Mechanical Engineering Intern</span>
+            <span class="item-date">May 2024 - August 2024</span>
+          </div>
+          <div class="item-location">U.S. Department of the Army • Tobyhanna, PA</div>
+          <ul class="resume-list">
+            <li>Designed four custom transmitter components for Air Force threat emitter, collaborating with technical and administrative staff to deliver 2 weeks ahead of schedule and $1,000 below budget</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PROJECT EXPERIENCE -->
+      <div class="resume-section">
+        <h2>Project Experience</h2>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Lanternfly Tracker: Hackathon</span>
+            <span class="item-date">September 2025 - Present</span>
+          </div>
+          <ul class="resume-list">
+            <li>Led ML and datalogging development for webapp to crowdsource invasive lanternfly sightings, earning 2nd place out of 17 teams at HackCMU</li>
+            <li>Collected and augmented 300+ real images of lanternflies and 2,000 insect/environmental images from Hugging Face to build robust 5,000 image dataset</li>
+            <li>Trained and evaluated EfficientNet-B0 classifier using Python and TensorFlow with transfer learning, reaching 89.7% accuracy in identifying lanternfly concentrations</li>
+            <li>Implemented real-time CSV data logging (Numpy) and graphing using kernel density mapping (SciPy, Matplotlib) to generate live concentration visualizations</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Thread Checker: ML Personal Project</span>
+            <span class="item-date">August 2025 - Present</span>
+          </div>
+          <ul class="resume-list">
+            <li>Developed computer vision program to classify thread types on fasteners across 3 categories, creating dataset of 400 real images augmented to 4,000 samples</li>
+            <li>Implemented data preprocessing and augmentation to standardize scaling, aspect ratio, and contrast, improving classification accuracy by 15%</li>
+            <li>Trained MobileNetV2 classifier (Python, Keras, TensorFlow) with custom pooling layers, achieving 76% testing accuracy across all thread types</li>
+            <li>Deployed model to Hugging Face Space for live testing and demonstration</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Stock Binary Sentiment Analysis: Class Project</span>
+            <span class="item-date">October 2024 - December 2024</span>
+          </div>
+          <ul class="resume-list">
+            <li>Developed dual-model machine learning system to predict stock price movement post-earnings using TensorFlow with FinBERT transformer and shallow neural network, achieving 75% classification accuracy</li>
+            <li>Built automated data pipeline utilizing SEC's Python API and web scraping to aggregate unstructured 10-Q text for 20 publicly traded companies</li>
+            <li>Conducted feature analysis with FinBERT model by training on different report sections, improving sentiment analysis to 75% validation accuracy</li>
+            <li>Engineered shallow neural network using TensorFlow on key financial metrics achieving 70% testing accuracy</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">ASU Senior Capstone Project: Dept of the Army</span>
+            <span class="item-date">August 2024 - May 2025</span>
+          </div>
+          <ul class="resume-list">
+            <li>Led 6-person team in designing reusable modular target system for military exercises</li>
+            <li>Gathered requirements, developed modular target geometries, and delivered comprehensive documentation for assembly and maintenance</li>
+            <li>Delivered project 1 month ahead of schedule</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="item-header">
+            <span class="item-title">Zigzag Flow Reactor: ASU Barrett Honors Thesis</span>
+            <span class="item-date">January 2022 - May 2025</span>
+          </div>
+          <ul class="resume-list">
+            <li>Redesigned mechanical and electrical systems for laboratory reactor to characterize energy storage medium, CAM28</li>
+            <li>Identified faster reduction reactions than suggested by past research through system optimization and testing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-section">
+        <p style="color: var(--text-light); margin-bottom: 1rem;">Download my resume for offline reference or to print</p>
+        <a href="assets/documents/Devin_DeCosmo_Resume.pdf" download class="download-btn" onclick="alert('PDF will be added soon. Contact via email for resume.');">📄 Download PDF</a>
+        <a href="index.html" class="download-btn" style="background-color: var(--secondary-color);">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Devin DeCosmo. All rights reserved.</p>
+    <p>
+      <a href="mailto:devindecosmo@gmail.com">Email</a> • 
+      <a href="https://github.com/ddecosmo-dev" target="_blank">GitHub</a> • 
+      <a href="https://linkedin.com/in/devin-decosmo" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
