@@ -26,7 +26,13 @@
   <main>
     <div class="project-detail">
       <div class="project-header">
-        <div class="project-image">📈</div>
+        <div class="project-image">
+          <img
+            src="../assets/images/stock-sentiment/stock.png"
+            alt="Stock Sentiment Analysis Dashboard"
+            style="width: 100%; height: auto; object-fit: cover;"
+          />
+        </div>
         <div class="project-info">
           <h1>Stock Sentiment Analysis Using 10-Q Forms</h1>
           <div class="project-meta">
@@ -41,11 +47,11 @@
           </div>
           </div>
           <p class="project-description">
-            A comprehensive machine learning system that predicts stock price
+            A machine learning system that predicts stock price
             movements following earnings announcements by analyzing sentiment in
-            SEC 10-Q filings. This project combines natural language processing,
-            financial data engineering, and deep learning to create an
-            end-to-end prediction pipeline.
+            SEC 10-Q filings. This project used a fine-tuned version of Fin-BERT 
+            to make effective binary predictions of stock behavior follwing a 
+            10-Q filing. 
           </p>
           <div style="margin-top: 1.5rem;">
             <a href="https://github.com/ddecosmo-dev" target="_blank" class="btn">View on GitHub</a>
@@ -76,14 +82,6 @@
         </ul>
       </div>
 
-      <h2 style="margin-top: 2rem;">Project Overview</h2>
-      <p class="project-description">
-        This project tackles the challenge of predicting stock price movements
-        using textual and financial data from SEC 10-Q quarterly reports. By
-        treating 10-Q filings as rich sources of company sentiment and
-        financial health indicators, the system learns to identify predictive
-        patterns that correlate with subsequent stock price performance.
-      </p>
 
       <h3 style="color: var(--primary-color); margin-top: 1.5rem;">Key Achievements</h3>
       
@@ -115,20 +113,17 @@
 
       <div class="project-description">
         <strong>Feature Engineering & Analysis</strong><br>
-        Conducted comprehensive feature analysis to determine which sections of
+        Conducted feature analysis to determine which sections of
         10-Q filings are most predictive. Results showed that combining all
-        text features yields higher accuracy than any single section, providing
-        valuable insights into how different parts of earnings reports
-        correlate with stock performance.
+        text features yields higher accuracy than any single section.
       </div>
 
       <div class="project-description">
         <strong>Model Performance</strong><br>
         Achieved peak classification accuracy of 75% for predicting binary
         stock price movement (up/down) post-earnings, compared to 70% baseline
-        accuracy using only financial metrics. The FinBERT component
-        specifically demonstrated the value of sophisticated NLP in capturing
-        market sentiment.
+        accuracy using only financial metrics. The FinBERT model showed improved 
+        performance over the MLP model. 
       </div>
 
       <div class="project-tech">
@@ -146,28 +141,7 @@
         </div>
       </div>
 
-      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Analysis</h3>
-      <div class="project-description">
-        <ul style="padding-left: 1.5rem;">
-          <li><strong>Companies Analyzed:</strong> 20 publicly traded companies spanning multiple sectors</li>
-          <li><strong>Peak Sentiment Accuracy:</strong> 75% using combined FinBERT approach</li>
-          <li><strong>Financial Metrics Accuracy:</strong> 70% using traditional financial indicators</li>
-          <li><strong>Feature Analysis:</strong> All document sections combined > individual sections</li>
-          <li><strong>Data Volume:</strong> Thousands of 10-Q documents processed and analyzed</li>
-        </ul>
-      </div>
-
-      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
-        <h3 style="color: var(--primary-color); margin-top: 0;">Key Insights</h3>
-        <p class="project-description" style="margin-bottom: 0;">
-          The 75% accuracy demonstrates that market-relevant sentiment is encoded in earnings reports and can be extracted through transformer models. The finding that all report sections combined yield better predictions than individual sections suggests that investors should consider holistic company narrative rather than isolated metrics. This work highlights the intersection of traditional finance and modern NLP techniques.
-        </p>
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
-        <a href="../projects.html" class="btn">← Back to All Projects</a>
-        <a href="../index.html" class="btn btn-secondary" style="margin-left: 1rem;">Home</a>
-      </div>
+      
     </div>
   </main>
 

@@ -26,7 +26,13 @@
   <main>
     <div class="project-detail">
       <div class="project-header">
-        <div class="project-image">🧵</div>
+        <div class="project-image">
+          <img
+            src="../assets/images/Thread-checker/threads.png"
+            alt="Thread Checker Model Output"
+            style="width: 100%; height: auto; object-fit: cover;"
+          />
+        </div>
         <div class="project-info">
           <h1>Thread Checker</h1>
           <div class="project-meta">
@@ -42,9 +48,10 @@
           </div>
           <p class="project-description">
             A computer vision application that automatically classifies
-            different thread types on fasteners. This project demonstrates
-            expertise in dataset creation, data augmentation, transfer
-            learning, and model deployment to production environments.
+            different thread types on fasteners. Initial testing was 
+            performed with three different thread types and a custom dataset of 
+            400 images. Images were classfied using a fine-tuned MobileNetV2 
+            model intended for edge device applications. 
           </p>
           <div style="margin-top: 1.5rem;">
             <a href="https://huggingface.co/spaces" target="_blank" class="btn">Live Demo</a>
@@ -61,11 +68,11 @@
             4,000 training samples
           </li>
           <li>
-            Implemented sophisticated data preprocessing for standardized
+            Implemented data preprocessing and cleaning for standardized
             scaling, aspect ratio, and contrast
           </li>
           <li>
-            Improved classification accuracy by 15% through strategic data
+            Improved classification accuracy by 15% through data
             augmentation
           </li>
           <li>
@@ -100,16 +107,15 @@
         <strong>Data Preprocessing Pipeline</strong><br>
         Implemented comprehensive preprocessing to standardize image scaling,
         maintain consistent aspect ratios, and normalize contrast across the
-        dataset. This systematic approach improved baseline model performance
-        by 15% and ensured consistent model behavior across diverse real-world
-        inputs.
+        dataset. This approach improved baseline model performance
+        by 15% and improved generalization based on input conditions. 
       </div>
 
       <div class="project-description">
         <strong>Model Architecture</strong><br>
         Selected MobileNetV2 as the base architecture for its balance of
         accuracy and computational efficiency. Added custom pooling layers to
-        better capture thread-specific features. The resulting model achieves
+        better capture thread-specific features. The resulting model achieved
         76% accuracy across all three thread types while maintaining fast
         inference speeds suitable for mobile and embedded deployment.
       </div>
@@ -118,8 +124,7 @@
         <strong>Production Deployment</strong><br>
         Deployed the trained model to Hugging Face Spaces, creating a web
         interface that allows users to upload images and receive real-time
-        classifications. The deployment demonstrates understanding of model
-        serving, containerization, and user experience design.
+        classifications. 
       </div>
 
       <div class="project-tech">
@@ -134,44 +139,6 @@
           <span class="tech-badge">Hugging Face</span>
           <span class="tech-badge">Transfer Learning</span>
         </div>
-      </div>
-
-      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Metrics</h3>
-      <div class="project-description">
-        <ul style="padding-left: 1.5rem;">
-          <li>
-            <strong>Dataset Size:</strong> 4,000 augmented images (400
-            original)
-          </li>
-          <li>
-            <strong>Model Accuracy:</strong> 76% on test set across three
-            thread types
-          </li>
-          <li>
-            <strong>Data Augmentation Impact:</strong> 15% improvement over
-            non-augmented baseline
-          </li>
-          <li>
-            <strong>Model Efficiency:</strong> Fast inference suitable for
-            real-time processing
-          </li>
-          <li>
-            <strong>Deployment Platform:</strong> Live on Hugging Face Spaces
-            for public use
-          </li>
-        </ul>
-      </div>
-
-      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
-        <h3 style="color: var(--primary-color); margin-top: 0;">Technical Insights</h3>
-        <p class="project-description" style="margin-bottom: 0;">
-          This project showcases the importance of high-quality data
-          preparation in machine learning. The 15% accuracy improvement from
-          data augmentation alone demonstrates that model architecture is only
-          one piece of the puzzle. The choice of MobileNetV2 reflects
-          real-world constraints: production systems often must balance
-          accuracy with computational resources and inference latency.
-        </p>
       </div>
 
       <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
