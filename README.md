@@ -155,7 +155,7 @@ Edit CSS variables in `assets/css/style.css`:
 
 ### Updating Resume
 
-1. **Add PDF** to `assets/documents/Devin_DeCosmo_Resume.pdf`
+1. **Add PDF** to `assets/Devin DeCosmo Resume.pdf`
 2. **Update resume.html** download link to point to the PDF
 3. Alternatively, keep the formatted HTML resume page
 

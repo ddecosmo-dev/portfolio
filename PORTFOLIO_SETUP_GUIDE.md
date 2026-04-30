@@ -167,7 +167,7 @@ Edit header in all HTML files - currently shows "D.D"
 
 **Add Resume PDF**:
 1. Export resume as PDF
-2. Place in `assets/documents/Devin_DeCosmo_Resume.pdf`
+2. Place in `assets/Devin DeCosmo Resume.pdf`
 3. Uncomment download link in `resume.html`
 
 ---

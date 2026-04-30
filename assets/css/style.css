@@ -145,15 +145,38 @@ section h2::after {
 
 .hero-image {
   width: 100%;
-  height: 400px;
-  background-color: var(--secondary-color);
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
   border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: 240px;
+  background-color: #f4f6f8;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--light-color);
-  font-size: 3rem;
-  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* CARDS & GRIDS */
@@ -301,13 +324,20 @@ section h2::after {
 .project-image {
   width: 100%;
   height: 400px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  background-color: #f4f6f8;
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .project-info h1 {
