@@ -147,7 +147,7 @@ section h2::after {
   width: 100%;
   max-width: 500px;
   aspect-ratio: 1 / 1;
-  background-color: transparent;
+  background-color: #ffffff;
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -199,18 +199,6 @@ section h2::after {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
-  overflow: hidden;
 }
 
 .card-content {

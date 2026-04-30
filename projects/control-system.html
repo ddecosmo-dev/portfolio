@@ -28,9 +28,9 @@
       <div class="project-header">
         <div class="project-image">
           <img
-            src="../assets/images/TCES_reactor/TCES_Reactor Diagram.jpeg"
+            src="../assets/images/flow-controller/Tempo.webp"
             alt="High-Temperature Control System"
-            style="width: 100%; height: auto; object-fit: cover;"
+            style="width: 100%; height: 100%; object-fit: contain;"
           />
         </div>
         <div class="project-info">
@@ -40,7 +40,7 @@
             <strong>Timeline:</strong> May 2025 - August 2025
           </div>
           <div class="project-meta-item">
-            <strong>Company:</strong> RedoxBlox
+            <strong>Company:</strong> Tempo
           </div>
           <div class="project-meta-item">
             <strong>Accuracy:</strong> ±1% Control Tolerance
@@ -48,9 +48,9 @@
           </div>
           <p class="project-description">
             Designed and deployed a complete high-temperature control system
-            for a Department of Energy (DOE) project. The system integrates
-            Arduino-based PID control logic, C# monitoring GUI, and mechanical
-            design to achieve ±1% control tolerance on an aggressive
+            for a Department of Energy (DOE) project. The final system consisted of
+            an Arduino-based control policy, a C# based monitoring GUI, and mechanical
+            design to achieve a ±1% flow control tolerance on an aggressive
             development timeline.
           </p>
           <div style="margin-top: 1.5rem;">
@@ -62,10 +62,10 @@
       <div class="project-highlights">
         <h3>Project Highlights</h3>
         <ul>
-          <li>Delivered project 1 week early with aggressive timeline management</li>
+          <li>Delivered project 1 week early</li>
           <li>Achieved ±1% control tolerance on high-temperature system</li>
           <li>Integrated three technical disciplines: mechanical, electrical, and software</li>
-          <li>Built production-ready C# GUI for real-time monitoring and control</li>
+          <li>Built C# GUI for real-time monitoring and control</li>
         </ul>
       </div>
 
@@ -85,29 +85,28 @@
         <strong>Mechanical System Design</strong><br>
         Engineered mechanical components and thermal management systems capable
         of reliably operating at high temperatures while enabling precise
-        sensor feedback and actuator control. The design prioritized thermal
-        stability and consistent performance across the operating range.
+        sensor feedback and actuator control. This required designing both mountings
+        for the control system itself along with refractory components at high temperatures.
       </div>
 
       <div class="project-description">
         <strong>PID Control Implementation</strong><br>
-        Developed PID control algorithms on Arduino platform, carefully tuning
-        parameters to achieve ±1% steady-state control tolerance. The control
-        law was validated through extensive testing and adjusted iteratively to
-        handle thermal dynamics and system lag.
+        Developed PID control policy for solid flow on an Arduino platform, achieving ±1% steady-state control tolerance. 
+        The control law was validated through extensive testing and adjusted iteratively to
+        handle thermal dynamics at high temperatures and system lag.
       </div>
 
       <div class="project-description">
         <strong>Embedded Systems Development</strong><br>
-        Wrote efficient Arduino firmware for real-time sensor acquisition,
+        Wrote Arduino firmware for real-time sensor acquisition,
         control calculation, and communication with the monitoring system. The
         firmware manages multiple control loops and implements safety protocols
-        for safe operation at temperature extremes.
+        for safe operation at temperature extremes including automatic shutdowns and purges.
       </div>
 
       <div class="project-description">
         <strong>Monitoring GUI Development</strong><br>
-        Built a professional C# Windows application enabling real-time visualization of system state, temperature trending, and manual control override. The GUI includes:
+        Built a C# Windows application enabling real-time visualization of system state, temperature trending, and manual control override. The GUI includes:
         <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
           <li>Real-time temperature display and trending graphs</li>
           <li>Set-point adjustment and control mode selection</li>
@@ -118,7 +117,7 @@
 
       <div class="project-description">
         <strong>Hardware-Software Integration</strong><br>
-        Managed seamless integration between embedded systems (Arduino),
+        Managed integration between embedded systems (Arduino),
         mechanical hardware, and monitoring software. Developed HTTP client
         communication protocols enabling reliable real-time data streaming and
         command execution between the control system and monitoring interface.
@@ -154,7 +153,6 @@
         <h3>Tech Stack</h3>
         <div class="tech-stack">
           <span class="tech-badge">Arduino</span>
-          <span class="tech-badge">C/C++</span>
           <span class="tech-badge">C#</span>
           <span class="tech-badge">PID Control</span>
           <span class="tech-badge">Real-Time Systems</span>
@@ -162,45 +160,6 @@
           <span class="tech-badge">Git</span>
           <span class="tech-badge">Linux</span>
         </div>
-      </div>
-
-      <h3 style="color: var(--primary-color); margin-top: 2rem;">Results & Metrics</h3>
-      <div class="project-description">
-        <ul style="padding-left: 1.5rem;">
-          <li>
-            <strong>Control Accuracy:</strong> ±1% steady-state tolerance
-            achieved and maintained
-          </li>
-          <li>
-            <strong>Timeline:</strong> Delivered 1 week ahead of aggressive
-            schedule
-          </li>
-          <li>
-            <strong>System Reliability:</strong> Stable operation across full
-            temperature operating range
-          </li>
-          <li>
-            <strong>Monitoring Capability:</strong> Real-time GUI with
-            comprehensive data logging and trending
-          </li>
-          <li>
-            <strong>Safety:</strong> Multiple layers of protection and manual
-            override capability
-          </li>
-        </ul>
-      </div>
-
-      <div style="background-color: #f8f9fa; padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
-        <h3 style="color: var(--primary-color); margin-top: 0;">Engineering Excellence</h3>
-        <p class="project-description" style="margin-bottom: 0;">
-          This project demonstrates the ability to rapidly deliver complex
-          engineering solutions integrating multiple technical domains. The
-          ±1% control tolerance required careful systems thinking: not just
-          tuning the control algorithm, but also understanding mechanical
-          thermal dynamics, sensor calibration, and communication latencies.
-          Delivering a week early on an aggressive timeline reflects strong
-          project management and technical execution.
-        </p>
       </div>
 
       <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
